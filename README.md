@@ -19,4 +19,7 @@ So far only IA32 is supported. The stack is heavily used.
 ##Using compiled files.
 
 The compiler produces a `.h` and a `.s`. In a C file, the `.h` can be regularly included. Compilation can be done as follows:
-    gcc -O file_in_c.c compiled_file.s
+
+```bash
+gcc -O file_in_c.c compiled_file.s
+```
