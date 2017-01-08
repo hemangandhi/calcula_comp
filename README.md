@@ -10,11 +10,15 @@ Calcula is a dummy-language that, with a Scheme-like syntax, denotes basic mathe
 
 Subtraction (`-`) and multiplication (`*`) are also supported.
 
+In the heavily optimized version, modulo (`%`) and division (`/`) are supported as well. Furthermore, L and R can be used for arguments.
+
 ##What the compiler compiles to...
 
 So far only IA32 is supported. The stack is heavily used.
 
 `gcc -O` must be used as the return value is left in the `eax` register.
+
+The heavily optimized version evaluates all constants at compile-time, reducing the run time of the code.
 
 ##Using compiled files.
 
