@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .currInstr{
+            background:yellow;
+        }
+        </style>
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+        <script src="js_resources/compil.js"></script>
+        <script src="js_resources/frontend.js"></script>
+    </head>
+    <body>
+        <h1>Calcula Emulator</h1>
+        <p>This compiles and then emulates the execution of Calcula.</p>
+        <textarea id="calcula">Enter your code here:</textarea>
+        <div>
+            The compiled value:
+            <ol id="compiled"></ol>
+        </div>
+        <input type="button" id="compilClick" value="Compile calcula!"></input>
+        <div>
+            <input type="text" id="compilClick" value="Left (%edi):"></input>
+            <input type="text" id="compilClick" value="Right (%esi):"></input>
+            <input type="button" disabled id="stepBack" value="<"></input>
+            <input type="button" disabled id="stepNext" value=">"></input>
+            <ul id="stack"></ul>
+        </div>
+    </body>
+</html>

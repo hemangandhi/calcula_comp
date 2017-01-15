@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "a.h"
+#include "test.h"
 
 int main(){
     printf("Got: %d\n", function(3, 6));
